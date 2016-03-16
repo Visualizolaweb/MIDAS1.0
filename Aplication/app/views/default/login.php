@@ -41,13 +41,14 @@ if(isset($_SESSION["usu_codigo"])){
 		document.getElementById('divMayus').style.visibility = 'hidden';
 	}
 	</script>
+
 </head>
 <body class="full-lg">
   <?php include("../../controller/alert.controller.php"); ?>
   <div id="wrapper">
     <div id="loading-top">
 		<div id="canvas_loading"></div>
-		<span>Verificando la información en Midas, Un momento por favor...</span>
+		<span style="color:whitesmoke">Verificando la información en Midas, Un momento por favor...</span>
     </div>
 
     <div id="main" class="bglogin">
@@ -75,8 +76,9 @@ if(isset($_SESSION["usu_codigo"])){
 
                                       <button class="btn btn-lg btn-theme-midas btn-block" type="submit" id="sign-in">Iniciar Sesión</button>
                               </section>
-                              <section class="clearfix">
-																			<a href="#" class="pull-right help forgot-help">Olvidaste tu contraseña? </a>
+                              <section class="clearfix"><a href="registro_usfranquicia.php" class="pull-right help forgot-help" style="margin-left:10px">Registrar Franquicia </a>
+																			<a href="#" class="pull-right help forgot-help" style="margin-left:10px">Olvidaste tu Contraseña? </a>
+
                               </section>
                       </form>
 
@@ -87,11 +89,6 @@ if(isset($_SESSION["usu_codigo"])){
       </div>
     </div>
   </div>
-<?php
-
-phpinfo();
-
-?>
   <footer>
     <div class="container-fluid">
       <div>&copy;MIHA S.A. | Desarrollado por <span class="sinappsis">SINAPPSIS LAB</span></div>

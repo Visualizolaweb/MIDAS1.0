@@ -413,4 +413,7 @@ border-radius: 5px;
 .menu_activo .icon{
   color: rgba(255, 255, 255, 1);
 }
- 
+
+#canvas_loading span{
+  color: #ffffff !important;
+}

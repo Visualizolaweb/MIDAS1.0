@@ -1,0 +1,192 @@
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 24 Feb 2016 20:08:49 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'age_color' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/agenda.class.php Linea 30. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 24 Feb 2016 21:51:01 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 24 Feb 2016 21:59:15 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'tra_laborigen' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 24 Feb 2016 22:01:11 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'tra_laborigen' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 24 Feb 2016 23:44:30 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`besfit_midas`.`ges_usuarios`, CONSTRAINT `ges_usuarios_ibfk_1` FOREIGN KEY (`ges_sede_sed_codigo`) REFERENCES `ges_sedes` (`sed_codigo`) ON UPDATE CASCADE), ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 128. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Thu, 25 Feb 2016 23:30:20 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Thu, 25 Feb 2016 23:45:21 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:06:31 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:07:40 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:09:09 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:20:48 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:22:40 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:24:14 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:25:56 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 35. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:33:50 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 39. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:37:46 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 39. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:42:53 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 39. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:44:08 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 42. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:50:26 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 40. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:50:30 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 40. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:51:11 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 40. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Fri, 26 Feb 2016 00:51:34 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/sedes.class.php Linea 42. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 02 Mar 2016 21:26:55 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'age_color' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/agenda.class.php Linea 30. 
+
+
+---------- Error ocurrido a Guillermo Valencia Machado -----------
+ [Wed, 02 Mar 2016 21:28:39 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'age_color' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/agenda.class.php Linea 30. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:00:24 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:01:33 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:01:37 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:02:34 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:02:58 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:04:23 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:05:27 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:07:08 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:07:26 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:08:09 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 13:08:45 -0500]: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/traslados.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 19:59:05 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 20:02:56 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:33:41 -0500]: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:40:24 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_nombre' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:41:20 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patogogias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:46:46 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patogogias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:48:18 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patogogias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:48:52 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patogogias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:50:10 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patologias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:50:48 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patologias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:50:58 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patologias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:51:40 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patologias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+
+---------- Error ocurrido a Margarita María Alvarez Tobón -----------
+ [Sat, 12 Mar 2016 21:52:41 -0500]: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inb_patologias' cannot be null, ubicado en el archivo /home2/besfit/public_html/midas/app/model/class/inbody.class.php Linea 37. 
+
+

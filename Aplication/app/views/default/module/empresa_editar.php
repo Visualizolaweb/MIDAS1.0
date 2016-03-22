@@ -54,12 +54,31 @@
 
                         <div class="form-group">
                           <label class="control-label">Pais</label>
-                            <input value="<?php echo $row[4];?>" name="txt_emp_pais"  type="text" class="form-control" parsley-trigger="change" parsley-required="true">
+                              <select name="txt_emp_pais" id="countries_states1" class="form-control bfh-countries" data-country="<?php echo $row[4];?>" data-filter="true"></select>
                         </div>
 
                         <div class="form-group">
                           <label class="control-label">Ciudad</label>
-                            <input value="<?php echo $row[5];?>" name="txt_emp_ciudad"  type="text" class="form-control" parsley-trigger="change" parsley-required="true">
+                          <div id="drop-city">
+                            <?php
+                            require_once("../../model/class/localizacion.class.php");
+
+                            $ciudades = Gestion_Localidad::Read_City();
+                            ?>
+
+                            <select class="form-control" id="txt-ciudad" name="txt_emp_ciudad" >
+                              <?php
+                                foreach($ciudades as $ciudad){
+                                  if($row['emp_ciudad']==$ciudad[1]){
+                                    $selected = "selected";
+                                  }else{
+                                    $selected = "";
+                                  }
+                                  echo "<option value='".$ciudad[1]."' $selected>".ucwords(strtolower($ciudad[2]))."</option>";
+                                }
+                              ?>
+                            </select>
+                           </div>
                         </div>
                     </div>
 
@@ -90,7 +109,7 @@
 
                         <div class="form-group">
                           <label class="control-label">Moneda   </label>
-                          <select name="txt_emp_moneda" class="form-control bfh-currencies" >
+                          <select name="txt_emp_moneda" class="form-control " >
                             <option <?php if($row[10]=="AED"){ echo "selected";} ?> value="AED">United Arab Emirates dirham</option>
                             <option <?php if($row[10]=="AFN"){ echo "selected";} ?> value="AFN">Afghan afghani</option>
                             <option <?php if($row[10]=="ALL"){ echo "selected";} ?> value="ALL">Albanian lek</option>

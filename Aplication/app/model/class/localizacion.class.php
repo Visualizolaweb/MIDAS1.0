@@ -37,6 +37,38 @@ class Gestion_Localidad{
     return $result;
   }
 
+function Read_City_byID($codigo_ciudad){
+
+  $pdo = MIDAS_DataBase::Connect();
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+  $sql = "SELECT * FROM ges_ciudades WHERE ciu_codigo = ?";
+
+  $query = $pdo->prepare($sql);
+  $query->execute(array($codigo_ciudad));
+
+  $result = $query->fetchALL(PDO::FETCH_BOTH);
+
+  MIDAS_DataBase::Disconnect();
+
+  return $result;
+}
+    function Read_City(){
+
+      $pdo = MIDAS_DataBase::Connect();
+      $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+      $sql = "SELECT * FROM ges_ciudades";
+
+      $query = $pdo->prepare($sql);
+      $query->execute();
+
+      $result = $query->fetchALL(PDO::FETCH_BOTH);
+
+      MIDAS_DataBase::Disconnect();
+
+      return $result;
+    }
 
 }
 ?>

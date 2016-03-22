@@ -24,18 +24,18 @@ class Gestion_Sedes{
    * Metodo que guarda archivos en ges_sedes    *
    **********************************************/
 
-  function Create($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono, $sed_email, 
-    $sed_direccion, $sed_pais, $sed_departamento, $sed_ciudad, $sed_geoubicacion, 
+  function Create($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono, $sed_email,
+    $sed_direccion, $sed_pais, $sed_departamento, $sed_ciudad, $sed_geoubicacion,
     $sed_fecha_creacion, $sed_autor, $sed_horainicio, $sed_horacierre){
 
     $pdo = MIDAS_DataBase::Connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO ges_sedes (sed_codigo,ges_empresa_emp_codigo,sed_nombre,sed_telefono,sed_email,sed_direccion,sed_pais,sed_departamento,sed_ciudad,sed_geoubicacion,sed_fecha_creacion,sed_autor,sed_horainicio,sed_horacierre) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";    
+    $sql = "INSERT INTO ges_sedes (sed_codigo,ges_empresa_emp_codigo,sed_nombre,sed_telefono,sed_email,sed_direccion,sed_pais,sed_departamento,sed_ciudad,sed_geoubicacion,sed_fecha_creacion,sed_autor,sed_horainicio,sed_horacierre) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     $query = $pdo->prepare($sql);
-    $query->execute(array($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono, 
-      $sed_email, $sed_direccion, $sed_pais, $sed_departamento, $sed_ciudad, $sed_geoubicacion, 
+    $query->execute(array($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono,
+      $sed_email, $sed_direccion, $sed_pais, $sed_departamento, $sed_ciudad, $sed_geoubicacion,
       $sed_fecha_creacion, $sed_autor, $sed_horainicio, $sed_horacierre));
 
 
@@ -65,7 +65,23 @@ class Gestion_Sedes{
     MIDAS_DataBase::Disconnect();
     return $results;
   }
-  
+
+  function ReadbyEmpresa($emp_codigo){
+
+    $pdo = MIDAS_DataBase::Connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT * FROM ges_sedes WHERE ges_empresa_emp_codigo = ?";
+
+    $query = $pdo->prepare($sql);
+    $query->execute(array($emp_codigo));
+
+    $results = $query->fetch(PDO::FETCH_BOTH);
+
+    MIDAS_DataBase::Disconnect();
+    return $results;
+  }
+
   function ReadbyID($sed_codigo){
 
     $pdo = MIDAS_DataBase::Connect();
@@ -112,7 +128,7 @@ class Gestion_Sedes{
     $sql = "UPDATE ges_sedes SET sed_nombre = ?, sed_telefono = ?, sed_email = ?, sed_direccion = ?, sed_pais = ?, sed_departamento = ?, sed_ciudad = ?, sed_geoubicacion = ?, sed_horainicio = ?, sed_horacierre = ? WHERE sed_codigo = ?";
 
     $query = $pdo->prepare($sql);
-    $query->execute(array($sed_nombre, $sed_telefono, $sed_email, $sed_direccion, $sed_pais, $sed_departamento, $sed_ciudad, $sed_geoubicacion, $sed_horainicio, 
+    $query->execute(array($sed_nombre, $sed_telefono, $sed_email, $sed_direccion, $sed_pais, $sed_departamento, $sed_ciudad, $sed_geoubicacion, $sed_horainicio,
       $sed_horacierre, $sed_codigo));
 
     MIDAS_DataBase::Disconnect();

@@ -31,13 +31,13 @@ class Gestion_Franquicias{
     MIDAS_DataBase::Disconnect();
   }
 
-  function Create_Sede($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono, $sed_email,
+  function Create_Sede($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono,
     $sed_direccion, $sed_fecha_creacion, $sed_autor, $sed_horainicio, $sed_horacierre){
 
     $pdo = MIDAS_DataBase::Connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO ges_sedes (sed_codigo,ges_empresa_emp_codigo,sed_nombre,sed_telefono,sed_direccion,sed_fecha_creacion,sed_autor,sed_horainicio,sed_horacierre) VALUES (?,?,?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO ges_sedes (sed_codigo,ges_empresa_emp_codigo,sed_nombre,sed_telefono,sed_direccion,sed_fecha_creacion,sed_autor,sed_horainicio,sed_horacierre) VALUES (?,?,?,?,?,?,?,?,?)";
 
     $query = $pdo->prepare($sql);
     $query->execute(array($sed_codigo, $ges_empresa_emp_codigo, $sed_nombre, $sed_telefono,$sed_direccion, $sed_fecha_creacion, $sed_autor, $sed_horainicio, $sed_horacierre));
@@ -50,7 +50,7 @@ class Gestion_Franquicias{
     $pdo = MIDAS_DataBase::Connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO ges_sedes (fin_banco, fin_sede, fin_tipo_cuenta, fin_numero_cuenta, fin_saldo) VALUES (?,?,?,?,?)";
+    $sql = "INSERT INTO ges_finanzas (fin_banco, fin_sede, fin_tipo_cuenta, fin_numero_cuenta, fin_saldo) VALUES (?,?,?,?,?)";
 
     $query = $pdo->prepare($sql);
     $query->execute(array($fin_banco, $fin_sede, $fin_tipo_cuenta, $fin_numero_cuenta, $fin_saldo));
@@ -63,19 +63,19 @@ class Gestion_Franquicias{
     $pdo = MIDAS_DataBase::Connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO ges_sedes (usu_codigo, ges_perfiles_per_codigo, ges_sedes_sed_codigo, usu_tipodocumento, usu_documento, usu_nombre, usuario_apellido_1, usu_email, usu_fecha_creacion, usu_autor) VALUES (?,?,?,?,?,?,?,?,?,?)";
+    $sql = "INSERT INTO ges_usuarios (usu_codigo, ges_perfiles_per_codigo, ges_sede_sed_codigo, usu_tipodocumento, usu_documento, usu_nombre, usu_apellido_1, usu_email, usu_fecha_creacion, usu_autor, usu_cargo, usu_estado) VALUES (?,?,?,?,?,?,?,?,?,?,'Franquiciado','Inactivo')";
 
     $query = $pdo->prepare($sql);
     $query->execute(array($usu_codigo, $ges_perfiles_per_codigo, $ges_sedes_sed_codigo, $usu_tipodocumento, $usu_documento, $usu_nombre, $usuario_apellido_1, $usu_email, $hoy, $autor));
 
     $sql = "INSERT INTO ges_acceso (acc_codigo, ges_usuarios_usu_codigo, acc_clave, acc_estado, acc_fecha_creacion, acc_tour, acc_primeravez) VALUES (?,?,?,?,?,?,?)";
 
-    $acc_estado     = "Inactivo";
+    $acc_estado     = "Desconectado";
     $acc_tour       = 0;
     $acc_primeravez = 0;
 
     $query = $pdo->prepare($sql);
-    $query->execute(array($acc_codigo, $ges_usuarios_usu_codigo, $acc_clave, $acc_estado, $hoy, $acc_tour, $acc_primeravez));
+    $query->execute(array($acc_codigo, $usu_codigo, $usu_clave, $acc_estado, $hoy, $acc_tour, $acc_primeravez));
 
     MIDAS_DataBase::Disconnect();
   }

@@ -1,3 +1,6 @@
+<?php
+	require_once("../../model/dbconn.model.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,10 +66,10 @@
 								<div class="account-wall">
 										<section class="align-lg-center">
 										<div class="site-logo"></div>
-										<h1 class="login-title"><span>CONFIGURA TU MIDAS </span><small> Pedimos unos minutos para la configuración de tu cuenta MIDAS</small></h1>
+										<h1 class="login-title"><span>REGISTRATE EN MIDAS</span><small> Para registrarse en MIDAS primero se require ingresar la siguiente información</small></h1>
 										<br>
 										</section>
-										<form id="validate-wizard" action="../../controller/crud_franquicia.controller.php" class="wizard-step shadow">
+										<form id="validate-wizard" action="../../controller/crud_franquicia.controller.php" class="wizard-step shadow" method="POST">
 												<ul class="align-lg-center" style="display:none">
 														<li><a href="#step1" data-toggle="tab">1</a></li>
 														<li><a href="#step2" data-toggle="tab">2</a></li>
@@ -92,13 +95,14 @@
 																</div>
 														</div>
 														<div class="tab-pane fade" id="step2" parsley-validate parsley-bind>
-															<h3>PASO 3: INGRESA UN LABORATORIO</h3>
+															<h3>PASO 2: INGRESA UN LABORATORIO</h3>
 														<span>Más adelante podrá ingresar todos los laboratorios de su franquicia</span><br><br>
 
 															<div class="form-group">
 																	<label class="control-label">Nombre Sede</label>
 																	<input name="laboratorio_nombre" type="text" class="form-control" parsley-required="true" >
 															</div>
+
 
 															<div class="row">
 																<div class="col-md-6">
@@ -150,7 +154,6 @@
 																<label class="control-label">Nombre del Banco</label>
 
 																<?php
-																	require_once("../../model/dbconn.model.php");
 																	require_once("../../model/class/bancos.class.php");
 
 																	$bancos = Gestion_Bancos::ReadAll();
@@ -229,8 +232,7 @@
 
 														<div class="tab-pane fade align-lg-center" id="step5">
 																<br><h3>Muchas Gracias <span></span> .....</h3><br>
-															<?php $_SESSION["acc_primeravez"] = 1;
-																  $_acc_primeravez =1;?>
+									 
 
 														</div>
 

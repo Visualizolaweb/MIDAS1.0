@@ -35,7 +35,7 @@
                   <?php Gestion_Menu::View_menu("header",$_usu_per_codigo);?>
 
                   <li class="divider"></li>
-                  <li><a href="../../controller/destruyosession.controller.php"><i class="fa fa-sign-out"></i> SALIR DE MIDAS </a></li>
+                  <li><a href="../../controller/destruyosession.controller.php"><i class="fa fa-sign-out"></i> Cerrar Sesión </a></li>
               </ul>
           </li>
 

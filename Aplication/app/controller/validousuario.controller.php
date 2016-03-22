@@ -8,7 +8,7 @@ require_once("../model/class/acceso.class.php");
 
 $txt_usu_documento = $_POST["txt_usu_documento"];
 $txt_acc_clave     = $_POST["txt_acc_clave"];
- 
+
 if(isset($txt_usu_documento) or isset($txt_acc_clave)){
    sleep(1);
   /****************************
@@ -47,7 +47,8 @@ if(isset($txt_usu_documento) or isset($txt_acc_clave)){
             $_SESSION["sed_codigo"]     = $datos_usuario[14];
 
             $return_arr["status"]=1;
-
+            $return_arr["profile"] = $_SESSION["per_codigo"];
+            $return_arr["firstacc"] =  $_SESSION["acc_primeravez"];
             Gestion_Acceso::Online($datos_usuario[5]);
             }else{
               $return_arr["status"]=0;

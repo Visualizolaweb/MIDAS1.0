@@ -42,12 +42,12 @@ $(function() {
                          }
                          setTimeout(function () { $("#loading-top span").text("Bienvenido a MIDAS") }, 500);
 
-                         if(e.profile == "PER-00002"){
+                         if((e.profile == "PER-00002")&&(e.firstacc == 0)){
                            setTimeout(function () { $("#loading-top span").text("Espere un momento mientras cargamos la configuración inicial")  }, 1500);
                            setTimeout( "window.location.href='config_ini.php'", 3100 );
                          }else{
-                           setTimeout(function () { $("#loading-top span").text("Cargando contendio de los laboratorios")  }, 1500);
-                           setTimeout( "window.location.href='dashboard.php'", 3100 );
+                           setTimeout(function () { $("#loading-top span").text("Cargando contenido de los laboratorios")  }, 1500);
+                            setTimeout( "window.location.href='dashboard.php'", 3100 );
                          }
                 }
             });

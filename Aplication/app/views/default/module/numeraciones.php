@@ -11,7 +11,7 @@ $icono = Gestion_Menu::Load_icon($row_paginas[0]);
         <div class="panel">
           <header class="panel-heading">
             <div class="icon"><i class="<?php echo $icono["men_icono"]; ?>"></i></div>
-            <h2> <?php echo $row_paginas[1];?></h2> 
+            <h2> <?php echo $row_paginas[1];?></h2>
             <span><?php echo $row_paginas[2];?></span>
 			    </header>
 		    </div>
@@ -26,7 +26,7 @@ $icono = Gestion_Menu::Load_icon($row_paginas[0]);
 
                 require_once("../../conf.ini.php");
                 require_once("../../model/class/numeracion.class.php");
-                $row = Gestion_Numeracion::ReadbyID("NUM-023947");
+                $row = Gestion_Numeracion::ReadbySEDE($_usu_sed_codigo);
 
               ?>
 

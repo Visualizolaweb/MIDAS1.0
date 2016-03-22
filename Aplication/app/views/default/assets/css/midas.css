@@ -116,28 +116,6 @@ footer{
   text-align: right;
   font-size: 11px}
 
-.modal-welcome{
-  background-color: transparent;
-  box-shadow: none;
-  font-family: "code_light";
-  font-size: 45px;
-  color: white;
-  text-align: center;
-  letter-spacing: 2px;
-  width: 900px;
-  left: 35%;
-}
-
-.modal-welcome span{
-  font-family: "Varela",sans-serif;
-  font-weight: 100;
-  font-size: 15px;
-}
-
-.modal-welcome .btns{
-  font-family: "oswaldregular" !important;
-  letter-spacing: 2px;
-  font-size: 15px;}
 
 
  .bfh-countries, .bfh-states{
@@ -416,4 +394,8 @@ border-radius: 5px;
 
 #canvas_loading span{
   color: #ffffff !important;
+}
+
+input, select, textarea{
+  text-transform: uppercase;
 }

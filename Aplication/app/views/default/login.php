@@ -42,6 +42,7 @@ if(isset($_SESSION["usu_codigo"])){
 	}
 	</script>
 
+
 </head>
 <body class="full-lg">
   <?php include("../../controller/alert.controller.php"); ?>
@@ -111,5 +112,8 @@ if(isset($_SESSION["usu_codigo"])){
 
 	<script type='text/javascript' src='javascript/login.js'></script>
 
+  	<?php if(isset($_GET["alert"])){
+	 		echo "<script>	swal({title: 'Información de MIDAS!',text:'".base64_decode($_GET["almsn"])."',html:true});</script>";
+  	 } ?>
 </body>
 </html>

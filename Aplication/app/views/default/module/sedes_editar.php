@@ -50,28 +50,47 @@
                         </div>
 
                         <div class="form-group">
-                          <label class="control-label">País </label>
-                            <input name="txt_sed_pais"  type="text" class="form-control" parsley-trigger="change" parsley-required="true" value="<?php echo $row[6];?>">
+                            <label class="control-label">Pais de origen</label>
+                            <select name="txt_sed_pais" id="countries_states1" class="form-control bfh-countries" data-country="<?php echo $row['sed_pais'];?>" data-filter="true"></select>
                         </div>
 
                         <div class="form-group">
-                          <label class="control-label">Departamento </label>
-                            <input name="txt_sed_departamento"  type="text" class="form-control" parsley-trigger="change" parsley-required="true" value="<?php echo $row[7];?>">
+                            <label class="control-label">Departamento</label>
+                            <select id="countries_states2" name="txt_sed_departamento" class="form-control bfh-states" data-country="countries_states1" data-state="<?php echo $row['sed_departamento'];?>"> </select>
                         </div>
 
                         <div class="form-group">
-                          <label class="control-label">Ciudad   </label>
-                            <input name="txt_sed_ciudad"  type="text" class="form-control" parsley-trigger="change" parsley-required="true" value="<?php echo $row[8];?>">
+                            <label class="control-label">Ciudad</label>
+                            <div id="drop-city">
+                              <?php
+                              require_once("../../model/class/localizacion.class.php");
+
+                              $ciudades = Gestion_Localidad::Read_City();
+                              ?>
+
+                              <select class="form-control" id="txt-ciudad" name="txt_sed_ciudad" >
+                                <?php
+                                  foreach($ciudades as $ciudad){
+                                    if($row['emp_ciudad']==$ciudad[1]){
+                                      $selected = "selected";
+                                    }else{
+                                      $selected = "";
+                                    }
+                                    echo "<option value='".$ciudad[1]."' $selected>".ucwords(strtolower($ciudad[2]))."</option>";
+                                  }
+                                ?>
+                              </select>
+                             </div>
                         </div>
 
                         <div class="form-group">
                           <label class="control-label">Abierto desde: </label>
-                            <input name="txt_sed_horainicio"  type="text" class="form-control" parsley-trigger="change" parsley-required="true"  value="<?php echo $row[12];?>">
+                            <input name="txt_sed_horainicio"  type="time" class="form-control" parsley-trigger="change" parsley-required="true"  value="<?php echo $row[12];?>">
                         </div>
 
                           <div class="form-group">
                           <label class="control-label">Hasta:   </label>
-                            <input name="txt_sed_horacierre"  type="text" class="form-control" parsley-trigger="change" parsley-required="true"  value="<?php echo $row[13];?>">
+                            <input name="txt_sed_horacierre"  type="time" class="form-control" parsley-trigger="change" parsley-required="true"  value="<?php echo $row[13];?>">
                         </div>
 
 

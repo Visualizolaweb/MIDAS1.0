@@ -390,6 +390,8 @@
                                       <?php
                                         if($laboratorio[3] == 0){
                                           $telefono = "";
+                                        }else{
+                                          $telefono = $laboratorio[3];
                                         }
                                       ?>
                                       <input name="txt_sed_telefono"  type="text" class="form-control" parsley-trigger="change" parsley-required="true" value="<?php echo $telefono;?>">

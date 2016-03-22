@@ -41,7 +41,6 @@ class Gestion_Acceso{
 
     MIDAS_DataBase::Disconnect();
     return $results;
-
   }
 
 

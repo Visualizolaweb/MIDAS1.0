@@ -67,7 +67,7 @@ if(isset($_SESSION["usu_codigo"])){
                               <section>
                                       <div class="input-group">
                                               <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                              <input type="text" class="form-control" name="txt_usu_documento" placeholder="Cédula del Usuario"  required>
+                                              <input type="number" class="form-control" name="txt_usu_documento" placeholder="Cédula del Usuario"  required>
                                       </div>
                                       <div class="input-group">
                                               <div class="input-group-addon"><i class="fa fa-key"></i></div>
@@ -78,7 +78,7 @@ if(isset($_SESSION["usu_codigo"])){
                                       <button class="btn btn-lg btn-theme-midas btn-block" type="submit" id="sign-in">Iniciar Sesión</button>
                               </section>
                               <section class="clearfix"><a href="registro_usfranquicia.php" class="pull-right help forgot-help" style="margin-left:10px">Registrar Franquicia </a>
-																			<a href="#" class="pull-right help forgot-help" style="margin-left:10px">Olvidaste tu Contraseña? </a>
+																			<!-- <a href="#" class="pull-right help forgot-help" style="margin-left:10px">Olvidaste tu Contraseña? </a> -->
 
                               </section>
                       </form>

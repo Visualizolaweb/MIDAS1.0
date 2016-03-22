@@ -1,4 +1,4 @@
-.configuracion .thum .panel{
+  .configuracion .thum .panel{
   background-color: #73C50E;
   transition: 0.2s ease;
   color: white;
@@ -395,7 +395,38 @@ border-radius: 5px;
 #canvas_loading span{
   color: #ffffff !important;
 }
-
+/*
 input, select, textarea{
   text-transform: uppercase;
+}*/
+
+#changesede{
+  margin-top: 20px;
 }
+
+#changesede label{
+  font-weight: normal;
+}
+
+#changesede select{
+  background-color: #E5E9EC;
+}
+
+ #home-title{
+   background-color: #1b1e24;
+   font-size: 20px;
+   padding: 10px;
+   color: #fff;
+   margin-bottom: 20px;
+ }
+ #home-title span{
+   color: #8FE920;
+ }
+
+ .progress-label{
+   top:0;
+   font-size: 12px;
+ }
+
+.well {
+  min-height: 175px;}

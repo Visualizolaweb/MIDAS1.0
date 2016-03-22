@@ -420,11 +420,7 @@
 													<ul class="iCheck"  data-style="line" data-color="aero">
 															<li>
 																	<input type="radio" name="txt_cli_tipo_usuario" checked="checked" value="Fijo">
-																	<label>Usuario fijo</label>
-															</li>
-															<li>
-																	<input  type="radio" name="txt_cli_tipo_usuario"   value="Flotante">
-																	<label>Usuario flotante</label>
+																	<label>Cliente normal</label>
 															</li>
 															<li>
 																	<input  type="radio" name="txt_cli_tipo_usuario"  value="Artista-Famoso">

@@ -126,13 +126,13 @@
           <br>
           <p style='clear:both; font-size: 14px; color: #6e6e6e'>
             Se ha solicitado la activación del usuario: <br><br>
-            <strong>Empresa: </strong>Nit ".$empresa_nit." - ".$empresa_razon." <br>
+            <strong>Empresa: </strong>".$empresa_razon." Nit ".$empresa_nit."   <br>
             <strong>Usuario: </strong><em>".$usuario_nombre." ".$usuario_apellido."</em> Identificación Número: ".$usuario_dni." <br>
             <strong>Correo Electronico: </strong>".$usuario_email.".
           </p>
 
           <p>
-            Si esta deacuerdo con la activación de dicho usuario y franquicia por favor hacer clic en el siguiente enlace
+              Si esta de acuerdo con la activación de dicho usuario y franquicia por favor hacer clic en el siguiente enlace
               <a href='https://midas.bes.com.co/app/controller/useractivate.php?ui=".base64_encode($usuario_codigo)."&ac=".base64_encode("si")."&em=".base64_encode($usuario_email)."'>https://midas.bes.com.co/dashboard.php?activate=yes&ui=".base64_encode($usuario_codigo)."&ac=".base64_encode("si")."&em=".base64_encode($usuario_email)."</a>, o ingrese a la aplicación MIDAS <a href='http://midas.bes.com.co'>https://midas.bes.com.co</a>
           </p>
           <div style='text-align:center'>

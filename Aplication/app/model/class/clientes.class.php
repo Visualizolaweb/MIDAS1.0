@@ -285,15 +285,15 @@ function UpdateCortesia($cli_codigo, $cli_cupo){
       MIDAS_DataBase::Disconnect();
     }
 
-    function Numafiliados(){
+    function Numafiliados($sede){
 
       $pdo = MIDAS_DataBase::Connect();
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-      $sql = "SELECT COUNT(*) FROM ges_clientes ";
+      $sql = "SELECT COUNT(*) FROM ges_clientes WHERE ges_sedes_sed_codigo = ?";
 
       $query = $pdo->prepare($sql);
-      $query->execute();
+      $query->execute(array($sede));
 
       $result = $query->fetch(PDO::FETCH_BOTH);
 

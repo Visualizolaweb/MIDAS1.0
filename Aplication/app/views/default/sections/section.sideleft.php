@@ -1,3 +1,13 @@
+<?php
+
+  if(isset($_GET["flag"])){
+    if(base64_decode($_GET["flag"])=="confirmar cambio"){
+      $_SESSION["sed_codigo"] = base64_decode($_GET["change-sede"]);
+      $_usu_sed_codigo = base64_decode($_GET["change-sede"]);
+    }
+  }
+
+?>
 <div id="nav">
   <div id="nav-scroll">
 
@@ -11,8 +21,11 @@
 
       <span>
         <?php
+
+
           require_once("../../model/class/clientes.class.php");
-          $afiliados = Gestion_Clientes::Numafiliados();
+          $afiliados = Gestion_Clientes::Numafiliados($_usu_sed_codigo);
+
 
           if($afiliados[0] < 1){
             echo "Aun no hay afiliados en este lab";
@@ -21,6 +34,30 @@
           }
         ?>
       </span>
+
+    <form id="changesede" action="dashboard.php">
+
+      <input type="hidden" value="<?php echo base64_encode("confirmar cambio"); ?>" name="flag">
+      <div class="row">
+        <div class="col-md-12" style="text-align:left">
+          <label class="label-control">Cambiar de Sede</label>
+          <select class="form-control" id="txt-sede" name="change-sede" >
+            <option value="Seleccionar Sede">Seleccione una Sede</option>
+            <?php
+              if($_emp_codigo == 'EMP-890983815-5'){
+                $sedes = Gestion_Sedes::ReadAll();
+              }else{
+                $sedes = Gestion_Sedes::ReadAllbyEmpresa($_emp_codigo);
+              }
+
+              foreach($sedes as $row){
+                echo "<option value='".base64_encode($row['sed_codigo'])."'>".$row["sed_nombre"]."</option>";
+              }
+            ?>
+          </select>
+        </div>
+      </div>
+    </form>
       </div>
 
       <div class="avatar-link btn-group btn-group-justified">
@@ -38,7 +75,7 @@
             </a>
 		</header>
 
-        <section class="collapse out" id="collapseSummary">
+        <section class="collapse in" id="collapseSummary">
             <div class="collapse-boby" style="padding:0">
               <?php
                 $finanzas_sede = Gestion_Home::Finanzas_Sede($_usu_sed_codigo);

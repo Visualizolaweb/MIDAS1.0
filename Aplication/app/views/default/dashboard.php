@@ -6,15 +6,23 @@
       require_once("../../model/class/empresa.class.php");
       require_once("../../model/class/sedes.class.php");
       require_once("../../model/class/home.class.php");
-
+      require_once("../../model/class/widgets.class.php");
 	if(!isset($_REQUEST["m"])){
-		$m = "module/home.php";
+
+    if(($_usu_per_codigo == "PER-00001")||($_usu_per_codigo == "PER-03978")){
+       $m = "module/home.php";
+    }elseif($_usu_per_codigo == "PER-00002"){
+       $m = "module/home-franquicia.php";
+    }else{
+       $m = "module/home-empleado.php";
+    }
+
 	}else{
 		$m = base64_decode($_REQUEST["m"]);
 	}
 
 
-  if($m == "module/home.php"){
+  if(($m == "module/home.php")||($m == "module/home-franquicia.php")||($m == "module/home-empleado.php")){
     $slide = "";
   }else{
     $slide = "class='nav-collapse in'";
@@ -37,11 +45,10 @@
 
    <header><?php require_once("sections/section.header.php");?></header>
 
-   <?php if($m == "module/home.php"){ ?>
+   <?php if(($m == "module/home.php")||($m == "module/home-franquicia.php")||($m == "module/home-empleado.php")){ ?>
    <aside> <?php require_once("sections/section.sideleft.php");?></aside>
    <?php } ?>
 
-   <?php include("sections/section.welcome.php");?>
    <?php require($m); ?>
 
    <!-- ************* SECCION MENSAJES  ************** -->

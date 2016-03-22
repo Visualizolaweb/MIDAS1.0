@@ -20,6 +20,13 @@
 <script type="text/javascript" src="assets/plugins/BootstrapFormHelpers-master/dist/js/bootstrap-formhelpers.js"></script>
 <script type="text/javascript">
 $(function() {
+
+  $("#txt-sede").change(function() {
+    if($("#txt-sede option:selected").val() != "Seleccionar Sede"){
+      $("#changesede").submit();
+    };
+  });
+
   $('#datagrid').DataTable();
   $("#navmen").addClass("tooltip-area");
   $('#datetimepicker1').datetimepicker();

@@ -82,6 +82,22 @@ class Gestion_Sedes{
     return $results;
   }
 
+  function ReadAllbyEmpresa($emp_codigo){
+
+    $pdo = MIDAS_DataBase::Connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT * FROM ges_sedes WHERE ges_empresa_emp_codigo = ?";
+
+    $query = $pdo->prepare($sql);
+    $query->execute(array($emp_codigo));
+
+    $results = $query->fetchALL(PDO::FETCH_BOTH);
+
+    MIDAS_DataBase::Disconnect();
+    return $results;
+  }
+
   function ReadbyID($sed_codigo){
 
     $pdo = MIDAS_DataBase::Connect();

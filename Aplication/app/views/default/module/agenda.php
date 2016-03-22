@@ -56,12 +56,19 @@ $numagenda = count($agenda);
                         <div id="btn-cancelacita" class="btn btn-inverse btn-block"><i class="fa fa-trash-o"></i> Cancelar cita</div><hr>
                         <h4><strong>TABLA</strong> de colores </h4>
                         <hr>
-                        <span class="external-event label btn-block bg-green">Usuario Fijo</span>
-                        <span class="external-event label btn-block bg-primary">Usuario Flotante</span>
-                        <span class="external-event label btn-block bg-orange">Familiares, Empleados y Famosos</span>
-                        <span class="external-event label btn-block bg-yellow">Cortesia</span>
-                        <span class="external-event label btn-block bg-red">Ultima Cita</span>
-                        <span class="external-event label btn-block bg-reservada">Reservada</span>
+                        <span class="external-event label btn-block" style="background-color:#95D600">Usuario Fijo</span>
+                        <span class="external-event label btn-block" style="background-color:#00BFA8">Usuario Flotante</span>
+                        <span class="external-event label btn-block" style="background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(149,214,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(26%, rgba(255,255,255,1)), color-stop(100%, rgba(149,214,0,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(149,214,0,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(149,214,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(149,214,0,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(149,214,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#95d600', GradientType=0 );color:#2e4200">Reservada</span>
+                        <span class="external-event label btn-block" style="background-color:#FFD600">Cortesia</span>
+                        <span class="external-event label btn-block" style="background-color:#AC130D">Ultima Cita</span>
+                        <span class="external-event label btn-block" style="background-color:#9E9E9E">VIP</span>
                         <div id="test"></div>
                     </div>
 

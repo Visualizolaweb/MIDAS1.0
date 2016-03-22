@@ -114,6 +114,19 @@ class Gestion_Usuarios{
     MIDAS_DataBase::Disconnect();
   }
 
+  function UpdateState($usu_estado, $usu_codigo){
+
+    $pdo = MIDAS_DataBase::Connect();
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "UPDATE ges_usuarios SET usu_estado = ? WHERE usu_codigo = ?";
+
+    $query = $pdo->prepare($sql);
+    $query->execute(array($usu_estado, $usu_codigo));
+
+    MIDAS_DataBase::Disconnect();
+  }
+
    /*********************************************
    * Delete()                                   *
    * Metodo de eliminación de registro          *

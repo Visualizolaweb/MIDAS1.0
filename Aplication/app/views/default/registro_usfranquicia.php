@@ -231,8 +231,8 @@
 																			</div>
 
 														<div class="tab-pane fade align-lg-center" id="step5">
-																<br><h3>Muchas Gracias <span></span> .....</h3><br>
-									 
+																<br><h3>No cierre por favor, se esta realizando su registro, espere un momento <span></span> .....</h3><br>
+
 
 														</div>
 

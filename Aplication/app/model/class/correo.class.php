@@ -102,12 +102,12 @@ class Gestion_Correo{
    * Metodo de eliminación de registro          *
    **********************************************/ 
   
-  function Delete($$cod_correo,){
+  function Delete($cod_correo){
     
     $pdo = MIDAS_DataBase::Connect();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    $sql = "DELETE FROM ges_correo WHERE $cod_correo, = ?";
+    $sql = "DELETE FROM ges_correo WHERE $cod_correo = ?";
     
     $query = $pdo->prepare($sql);
     $query->execute(array($cod_correo,));
